@@ -1,0 +1,130 @@
+:root {
+    --tan: #ffbe81;
+    --light: #fff;
+    --dark: #000000;
+    --lightTan: #ffd6b0;
+  }
+  
+  header {
+    display: absolute;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1%;
+    background-color: var(--tan);
+    color: var(--light);
+    border-style: double;
+    border-width: 10px;
+  }
+  
+  h1 {
+    font-size: 300%;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 25px;
+    text-align: center;
+    font-family: "Optima", sans-serif;
+  }
+
+  img {
+    height: 300px;
+    width: 320px;
+    border: solid;
+    border-color: var(--dark);
+    border-width: 2px;
+   }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 0rem;
+    margin-left: 22rem;
+    margin-right: 1.5rem;
+    padding: 1%;
+    background-color: var(--lightTan);
+    border: solid;
+    border-color: var(--tan);
+    border-width: thick;
+    border-style: double;
+  }
+  .container p {
+    color: var(--dark);
+    font-size: 105%;
+    font-family:'Courier New', Courier, monospace;
+  }
+  
+.sideHeader {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 2rem;
+    margin-left: 0rem;
+    width: 300px;
+    padding: 1%;
+    background-color: var(--lightTan);
+}
+
+
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 10px;
+    list-style: none;
+  }
+  
+  nav a {
+    background-color: unset;
+    border-style: solid;
+    border-width: 1px;
+    color: var(--dark);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 180%;
+    font-family: "Optima", sans-serif;
+  }
+  
+  nav a:hover {
+    color: var(--light);
+  }
+  
+  main {
+    /* display: flex;
+    flex: 1 1 0; */
+    max-width: 96%;
+    margin: 2% auto;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    background-color: var(--tan);
+    color: var(--light);
+  }
+/*
+@media screen and (min-width: 768px) {
+  /* on tablets, set columns to only be 50% of the width and not grow 
+  .card-column {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  /* select the last child to grow to full width if it has space to grow
+  .card-column:last-child {
+    flex-grow: 1;
+  }
+}
+
+/* media query for larger screens 
+@media screen and (min-width: 992px) {
+  header {
+    width: 75%;
+  }
+
+  .card-column {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
+}
+*/
+  
