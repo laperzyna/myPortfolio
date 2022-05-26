@@ -1,8 +1,10 @@
+
 :root {
-    --tan: #ffbe81;
+    --mauve: #4e2d45;
     --light: #fff;
     --dark: #000000;
-    --lightTan: #ffd6b0;
+    --tan: #cf8479;
+    --orange: rgb(250, 185, 65);
   }
   
   header {
@@ -10,7 +12,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1%;
-    background-color: var(--tan);
+    background-color: var(--mauve);
     color: var(--light);
     border-style: double;
     border-width: 10px;
@@ -25,45 +27,177 @@
     font-family: "Optima", sans-serif;
   }
 
-  img {
+  .background {
+    padding: 5%;
+    margin-top: 1rem;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/586/603/742/minimalism-4k-for-mac-desktop-wallpaper-preview.jpg");
+    border-bottom: solid black 4px;
+  }
+
+  .background img {
     height: 300px;
     width: 320px;
     border: solid;
-    border-color: var(--dark);
-    border-width: 2px;
+    border-color: var(--light);
+    border-width: 1px;
+    margin-top: 0rem;
    }
   
-  .container {
+  .containerMe {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-top: 0rem;
     margin-left: 22rem;
     margin-right: 1.5rem;
+    margin-top: -17rem;
     padding: 1%;
-    background-color: var(--lightTan);
+    background-color: var(--tan);
     border: solid;
-    border-color: var(--tan);
+    border-color: var(--mauve);
     border-width: thick;
     border-style: double;
   }
-  .container p {
+
+  .containerMe p {
     color: var(--dark);
     font-size: 105%;
     font-family:'Courier New', Courier, monospace;
   }
-  
-.sideHeader {
+
+  .containerWork {
+    flex: 1 0 200px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-top: 2rem;
-    margin-left: 0rem;
-    width: 300px;
+    margin-left: 22rem;
+    margin-right: 1.5rem;
+    margin-top: -17rem;
     padding: 1%;
-    background-color: var(--lightTan);
-}
+    height: 300px;
+    background-image: url("https://cdn.pixabay.com/photo/2017/06/23/13/49/smoke-2434721__340.jpg");
+    border: solid;
+    border-color: var(--mauve);
+    border-width: thick;
+    border-style: double;
+  }
 
+  .containerWork2 {
+    flex: 1 0 200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 22rem;
+    margin-right: 1.5rem;
+    margin-top: 1rem;
+    padding: 1%;
+    height: 100px;
+    width: 410px;
+    background-image: url("https://cdn.pixabay.com/photo/2017/06/23/13/49/smoke-2434721__340.jpg");
+    border: solid;
+    border-color: var(--mauve);
+    border-width: thick;
+    border-style: double;
+  }
+
+  .containerWork3 {
+    flex: 1 0 200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 51rem;
+    margin-right: 1.5rem;
+    margin-top: -8.5rem;
+    padding: 1%;
+    height: 100px;
+    width: 410px;
+    background-image: url("https://cdn.pixabay.com/photo/2017/06/23/13/49/smoke-2434721__340.jpg");
+    border: solid;
+    border-color: var(--mauve);
+    border-width: thick;
+    border-style: double;
+  }
+
+  .miniContainer a {
+    display: block;
+    position: relative;
+    height: auto;
+    width: 200px;
+    top: 210px;
+    left: -5px;
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 1%;
+    border: solid;
+    border-color: var(--light);
+  }
+
+  .miniContainer2 a {
+    display: block;
+    position: relative;
+    height: auto;
+    width: 200px;
+    top: 40px;
+    left: -5px;
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 1%;
+    border: solid;
+    border-color: var(--light);
+  }
+
+  .miniContainer3 a {
+    display: block;
+    position: relative;
+    height: auto;
+    width: 200px;
+    top: 40px;
+    left: -5px;
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 1%;
+    border: solid;
+    border-color: var(--light);
+  }
+
+  a:hover{
+    color: var(--tan);
+  }
+
+  .containerWork:hover {
+    opacity: 75%;
+  }
+
+  .containerWork2:hover {
+    opacity: 75%;
+  }
+
+  .containerWork3:hover {
+    opacity: 75%;
+  }
+  
+  .title {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: -5rem;
+    width: 350px;
+    padding: 1%;
+    border-right: solid var(--dark);
+  }
+
+  h2 {
+    margin-left: 70%;
+    text-align: right;
+    font-size: 200%;
+    color: var(--dark);
+  }
+
+  a {
+    text-align: center;
+    font-size: 150%;
+  }
 
   nav ul {
     display: flex;
@@ -76,7 +210,7 @@
     background-color: unset;
     border-style: solid;
     border-width: 1px;
-    color: var(--dark);
+    color: var(--light);
     font-weight: bold;
     text-decoration: none;
     font-size: 180%;
@@ -84,21 +218,41 @@
   }
   
   nav a:hover {
-    color: var(--light);
+    color: var(--orange);
   }
   
   main {
-    /* display: flex;
-    flex: 1 1 0; */
     max-width: 96%;
     margin: 2% auto;
+  }
+
+  .containerContact {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 22rem;
+    margin-right: 1.5rem;
+    margin-top: -14.5rem;
+    padding: 1%;
+    border: solid;
+    border-color: var(--mauve);
+    border-width: thick;
+    border-style: double;
+  }
+
+
+  .containerContact a {
+    font-size: 130%;
+    font-family: "Optima", sans-serif;
+    padding: 5%;
   }
   
   footer {
     display: flex;
     justify-content: center;
-    padding: 2%;
-    background-color: var(--tan);
+    padding: 1%;
+    background-color: var(--mauve);
     color: var(--light);
   }
 /*
